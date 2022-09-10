@@ -11,6 +11,7 @@
 		45271BB428823FFF0022D9C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45271BB328823FFF0022D9C1 /* ContentView.swift */; };
 		45271BB6288240010022D9C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45271BB5288240010022D9C1 /* Assets.xcassets */; };
 		45271BB9288240010022D9C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45271BB8288240010022D9C1 /* Preview Assets.xcassets */; };
+		45271BC52882413E0022D9C1 /* DSFDropFilesView in Frameworks */ = {isa = PBXBuildFile; productRef = 45271BC42882413E0022D9C1 /* DSFDropFilesView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45271BC52882413E0022D9C1 /* DSFDropFilesView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "Video Probe";
+			packageProductDependencies = (
+				45271BC42882413E0022D9C1 /* DSFDropFilesView */,
+			);
 			productName = "Video Probe";
 			productReference = 45271BAE28823FFF0022D9C1 /* Video Probe.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 45271BA528823FFF0022D9C1;
+			packageReferences = (
+				45271BC32882413D0022D9C1 /* XCRemoteSwiftPackageReference "DSFDropFilesView" */,
+			);
 			productRefGroup = 45271BAF28823FFF0022D9C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,6 +282,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +310,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45271BC32882413D0022D9C1 /* XCRemoteSwiftPackageReference "DSFDropFilesView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dagronf/DSFDropFilesView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45271BC42882413E0022D9C1 /* DSFDropFilesView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45271BC32882413D0022D9C1 /* XCRemoteSwiftPackageReference "DSFDropFilesView" */;
+			productName = DSFDropFilesView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 45271BA628823FFF0022D9C1 /* Project object */;
 }
